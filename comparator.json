@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "MinimalSubcontinuum.isConnected_iInter_of_directed_compact",
+    "MinimalSubcontinuum.exists_minimal_subcontinuum",
+    "MinimalSubcontinuum.exists_minimal_subcontinuum_pair"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

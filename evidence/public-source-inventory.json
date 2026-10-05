@@ -1,0 +1,103 @@
+{
+  "project": "irreducible-subcontinua-lean",
+  "purpose": "Public source whitelist; full Library source/evidence bundle is private and excluded from publication.",
+  "public_files": [
+    {
+      "path": ".github/workflows/lean.yml",
+      "bytes": 871,
+      "sha256": "8b33276124dcca34e27aa0811149a5febb165e9ff78250d473004a8f73616916"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 90,
+      "sha256": "d34bb810ec9a8a21ed983dae6b5d92871309dc268e36ee91185a2f979a11b113"
+    },
+    {
+      "path": "Challenge.lean",
+      "bytes": 1991,
+      "sha256": "7e8fec8d991171848a0ad51520bd395bfe039b2c3ee143aba9fd47e091946e06"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11351,
+      "sha256": "5f3751276afe718ffa78ec1fc61490d4185712554bcb6a90059416dc424ce9a6"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 2746,
+      "sha256": "d5e0dabcd3f6bde90f830f58aa92605724e8031b27ab0aaa530f1d85d9199182"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2773,
+      "sha256": "6ca4862c457656b018afdae59ec1c3e3f0f8c5378960f5d379b17c361041c4e8"
+    },
+    {
+      "path": "Solution.lean",
+      "bytes": 6295,
+      "sha256": "9785ddd00be806b0710f41de4d0817a1ec9a044ab651d2c02c4de171e6bc5f5e"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 5131,
+      "sha256": "74fcc76edfbb520be9dafec1207acb28012e6e9bcf3409606530928c9c9426e9"
+    },
+    {
+      "path": "comparator.json",
+      "bytes": 429,
+      "sha256": "9d6663cc26d6d77574334930dae535bdf70c8364c5167d8cde008b77457ade1f"
+    },
+    {
+      "path": "evidence/public-review-summary.json",
+      "bytes": 2582,
+      "sha256": "f31e65ed7e14d43a6001e57fc50e028b694cd9261c99bbe7d89e1779fe0254d1"
+    },
+    {
+      "path": "formalization-validation.json",
+      "bytes": 8198,
+      "sha256": "68795e840ddf0faabdce52a7eecc3037aabbfe5baace21ffe535e83c0542f3c4"
+    },
+    {
+      "path": "formalization.yaml",
+      "bytes": 4640,
+      "sha256": "f4a4337de01c0f749e830cd3957630a12d4e620c0d423876b960a3af82e3f5a8"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3695,
+      "sha256": "4cbffbab956b4bf80ad45633c42159406ed6d6270dbe5375536e881c87c6bb5d"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 339,
+      "sha256": "8e8acca1b138a7a96fee7ab8f92da779503c03a395bc7cd0b68f3715b2badc79"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 29,
+      "sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+    },
+    {
+      "path": "scripts/CompareTypes.lean",
+      "bytes": 868,
+      "sha256": "6932579ea2b132890138f3aec18672ae9c68f082edaa301b9ccb6db2c4420dce"
+    },
+    {
+      "path": "scripts/verify.py",
+      "bytes": 8957,
+      "sha256": "e614f6ee777d1d3b8c330e0d54b1c9f8d8e4b59599b879058bdfa7d792ead505"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 68733,
+      "sha256": "41ea59198bb0288ea7435bc861d26c969abcecd88432dabdba869b8154e4ff45"
+    }
+  ],
+  "inventory_self_hash_excluded": true,
+  "ci_workflow": ".github/workflows/lean.yml",
+  "ci_entrypoint": "python3 scripts/verify.py --lake-build --output .lake/verification.json",
+  "package_check_entrypoint": "python3 scripts/verify.py --check-package-only",
+  "metadata_validation_utility": "scripts/validate_metadata.py is private; it uses official-rule snapshots in the private evidence bundle and requires PyYAML/jsonschema.",
+  "publication_action_in_this_task": "none",
+  "registry_submission": "none"
+}

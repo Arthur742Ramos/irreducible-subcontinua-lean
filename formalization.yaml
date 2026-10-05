@@ -1,0 +1,103 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Minimal Subcontinua in Hausdorff Spaces",
+    "description": "Every nonempty subset A of a compact connected set C in a Hausdorff space lies in a compact connected K with A ⊆ K ⊆ C, minimal under inclusion among compact connected subsets containing A. Includes the two-point corollary and connectedness of directed compact intersections.",
+    "authors": [
+      "Arthur Freitas Ramos",
+      "David Barros Hulak",
+      "Ruy Jose Guerra Barretto de Queiroz"
+    ],
+    "responsible_maintainers": [
+      "Arthur Freitas Ramos",
+      "David Barros Hulak",
+      "Ruy Jose Guerra Barretto de Queiroz"
+    ],
+    "license": "Apache-2.0"
+  },
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54D05",
+      "54D30",
+      "54F15"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Metric Topology: A First Course",
+      "authors": [
+        "Paul Bankston"
+      ],
+      "type": "paper",
+      "id": "https://www.mscsnet.mu.edu/~paul/Paper/4450102text.pdf#page=89",
+      "location": "Proposition 28.1 (p. 89); Proposition 27.1 supports the intersection argument",
+      "relationship": "formalizes",
+      "note": "Course notes for Math 4450, Spring 2011. The formalization uses the compact Hausdorff scope stated in Proposition 28.1.",
+      "author_endorsement": "not-contacted"
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "https://github.com/leanprover-community/mathlib4/tree/065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "relationship": "builds-on",
+      "note": "Uses Mathlib compactness, separation of compact sets, connectedness characterizations, and Zorn. Full pinned source search found no equivalent minimal-subcontinuum theorem. The search inventory is evidence/complete-mathlib-search.json in the separately delivered private evidence bundle."
+    }
+  ],
+  "status": {
+    "scope": "Minimal subcontinuum existence, two-point corollary, and directed compact connected intersection.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "OpenAI Codex (model identifier not recorded)"
+        ],
+        "framework": "Lean 4 and Mathlib",
+        "tool_setup": "AI-assisted proof construction with a serial bounded compiler, exact declaration type comparison, and transitive axiom audit."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "Human direction selected the theorem, proof route, and scope. Challenge contains three deliberate theorem holes, excluded from Solution admission counts."
+  },
+  "fidelity": {
+    "divergences": "Uses ordinary IsCompact and IsConnected predicates. The witness is minimal under inclusion. The result asserts neither leastness nor uniqueness, and has no metric, local connectedness, or arc hypothesis."
+  },
+  "review": {
+    "status": "Author local source build, randomized dependency-only Challenge, exact raw types, standard-axiom audit, official schema, and Palomar metadata contract checks passed. Independent AI review approved the mathematics and independently passed strict compilation, randomized Challenge, exact types, universe comparison, and axiom checks. The independent full schema/parser rerun was blocked by Python dependency reads. Ordinary clean Lake/cache build, hosted CI, Comparator/NaNoDa, and human mathematical review remain unrun. See VERIFICATION.md; raw receipts and source-search records belong to the separately delivered private evidence bundle."
+  },
+  "alignment": {
+    "namespace": "MinimalSubcontinuum",
+    "statements": [
+      {
+        "source": "Directed compact connected intersection",
+        "lean": "MinimalSubcontinuum.isConnected_iInter_of_directed_compact",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Bankston Proposition 28.1",
+        "lean": "MinimalSubcontinuum.exists_minimal_subcontinuum",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Two-point instance of Proposition 28.1",
+        "lean": "MinimalSubcontinuum.exists_minimal_subcontinuum_pair",
+        "module": "Solution",
+        "status": "proved"
+      }
+    ]
+  },
+  "acknowledgements": "Paul Bankston for the primary exposition, and Lean and Mathlib contributors for the proof infrastructure. No mathematical novelty, author endorsement, or human review is claimed."
+}

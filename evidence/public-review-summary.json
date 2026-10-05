@@ -1,0 +1,39 @@
+{
+  "decision": "Approve the mathematical content and local Lean proof/type/axiom validity, with one documentation nit; no approval of hosted verification, publication, or registry intake",
+  "solution_sha256": "9785ddd00be806b0710f41de4d0817a1ec9a044ab651d2c02c4de171e6bc5f5e",
+  "challenge_sha256": "7e8fec8d991171848a0ad51520bd395bfe039b2c3ee143aba9fd47e091946e06",
+  "mathematics": "Substantive classical existence theorem for arbitrary prescribed nonempty subsets, with reusable directed compact connected intersection theorem and a specialization to two points. Minimality is inclusion-minimal, with no leastness, uniqueness, path, or arc conclusion. No false hidden premises or vacuous substitute found.",
+  "independent_checks": [
+    "Strict direct compilation of exact owned Solution bytes",
+    "Random-name Challenge compilation with dependency paths only and exactly three expected holes",
+    "All three raw Expr types compared byte-for-byte, also matching author evidence",
+    "Universe parameter lists compared independently",
+    "Public declaration statement inspection and transitive axiom audit",
+    "All 64 archive members and 63 manifest records verified",
+    "13 official source blobs verified against live GitHub trees at recorded/current commits",
+    "Static metadata, module header/source rules, pins, and full source inventory checks"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_stage": {
+    "seconds": 54.06,
+    "cpu_count": 1,
+    "job_memory_limit_bytes": 3221225472,
+    "peak_job_commit_bytes": 2399645696,
+    "timeout_seconds": 600,
+    "source_unchanged": true,
+    "remaining_owned_processes": []
+  },
+  "independent_unrun": [
+    "Ordinary clean Lake build and cache installation",
+    "GitHub Actions",
+    "Hosted Comparator and independent kernels",
+    "Full Draft7 validator and Palomar metadata parser rerun: author schema-deps directories currently unreadable; author passing receipts and exact official source blobs inspected"
+  ],
+  "ci": "Small read-only pinned-action workflow with package checks, pinned toolchain installation, normal Lake cache/build request, raw type comparison and axiom audit. Definition reviewed, execution unrun.",
+  "scope": "Independent AI source review; raw reviewer receipts are in evidence/independent-review/ in the separately delivered private evidence bundle.",
+  "finding_resolution": "The exact Challenge is 1,991 bytes; 1,945 is its LF-normalized size. Reviewed Solution and Challenge bytes are unchanged."
+}
